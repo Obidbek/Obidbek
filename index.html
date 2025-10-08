@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To‘yxona Booking Platformasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__content">
+      <div class="logo" aria-label="To‘yxona platformasi logotipi">ToyXona.uz</div>
+      <nav class="nav" aria-label="Asosiy navigatsiya">
+        <a href="#features">Imkoniyatlar</a>
+        <a href="#calendar">Taqvim</a>
+        <a href="#packages">Paketlar</a>
+        <a href="#roles">Rollar</a>
+        <a href="#integrations">Integratsiyalar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <div class="cta-group">
+        <button class="btn btn--ghost">Kirish</button>
+        <button class="btn">Ro‘yxatdan o‘tish</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="badge">95% mijozlar tavsiya etgan platforma</span>
+          <h1>To‘yxona band qilishni onlayn boshqarish uchun yagona platforma</h1>
+          <p>Topshiriqlarni avtomatlashtiring: qidiruv, bandlik, to‘lov va hisobotlar bir joyda. ToyXona.uz bilan foydalanuvchilar, menejerlar va administratorlar uchun qulay boshqaruv paneli yarating.</p>
+          <div class="hero__actions">
+            <a href="#booking" class="btn">Bronlashni boshlash</a>
+            <a href="#demo" class="btn btn--ghost">Demo ko‘rish</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>5k+</strong> oylik faol foydalanuvchi</li>
+            <li><strong>100+</strong> to‘lovni bir vaqtda ko‘tarish</li>
+            <li><strong>99.5%</strong> xizmat ko‘rsatish kafolati</li>
+          </ul>
+        </div>
+        <div class="hero__card" aria-label="Qidiruv bo‘limi">
+          <form class="search-card" id="booking">
+            <h2>To‘yxona qidirish</h2>
+            <label>
+              <span>Shahar / Tuman</span>
+              <input type="text" placeholder="Toshkent, Yakkasaroy" required>
+            </label>
+            <label>
+              <span>Sana</span>
+              <input type="date" required>
+            </label>
+            <label>
+              <span>Mehmonlar soni</span>
+              <input type="number" min="30" max="1500" placeholder="300" required>
+            </label>
+            <label>
+              <span>Byudjet (UZS)</span>
+              <input type="number" min="0" placeholder="150 000 000">
+            </label>
+            <label>
+              <span>Xizmatlar</span>
+              <select multiple aria-label="Xizmatlarni tanlang">
+                <option value="halal">Halol oshxona</option>
+                <option value="parking">Parking</option>
+                <option value="decor">Dekor</option>
+                <option value="music">Live musiqa</option>
+                <option value="photo">Foto/Video</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn--full">Natijalarni ko‘rsatish</button>
+            <p class="search-card__helper">Kiritilgan filtrlarga mos maydonlarni topish uchun <strong>AI yordamchisi</strong> mavjud.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Platforma funksiyalariga umumiy nazar</h2>
+        <p class="section__lead">Mehmonlar, to‘yxona menejerlari va administratorlar uchun alohida imkoniyatlar. Har bir modul mobil qurilmalarda ham to‘liq ishlaydi.</p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Qidiruv va filtrlar</h3>
+            <ul>
+              <li>Joylashuv, sana, narx, sig‘im va paket turiga ko‘ra filtr</li>
+              <li>Halol oshxona, konditsioner, parking kabi xizmatlarni belgilash</li>
+              <li>Google/Yandex Maps integratsiyasi bilan xarita ko‘rinishi</li>
+            </ul>
+          </article>
+          <article class="feature-card">
+            <h3>Bandlik taqvimi</h3>
+            <ul>
+              <li>Oy, hafta va kun kesimida band/bo‘sh statuslari</li>
+              <li>Qizil rangdagi band kunlar, och rangdagi mavjud slotlar</li>
+              <li>Real-time bandlikni tekshiruvchi tranzaksion mexanizm</li>
+            </ul>
+          </article>
+          <article class="feature-card">
+            <h3>Bronlash jarayoni</h3>
+            <ul>
+              <li>3 qadamli checkout: Sana → Ma’lumot → To‘lov</li>
+              <li>Paket va qo‘shimcha xizmatlarni dinamik tanlash</li>
+              <li>To‘liq yoki qisman (20-30%) oldindan to‘lov</li>
+            </ul>
+          </article>
+          <article class="feature-card">
+            <h3>Hisobot va analitika</h3>
+            <ul>
+              <li>Daromad, bandlik foizi va mashhur davrlar bo‘yicha grafiklar</li>
+              <li>CSV/XLSX eksport, audit log va nazorat paneli</li>
+              <li>Webhook va Public API orqali hamkor tizimlarga ulanish</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="calendar">
+      <div class="container calendar">
+        <div class="calendar__intro">
+          <h2>Bandlik taqvimi</h2>
+          <p>Real-time taqvim orqali band qilingan kunlar va mavjud slotlarni nazorat qiling. Pessimistik lock hamda Redis asosidagi distributed lock ikki marta band bo‘lish holatlarini oldini oladi.</p>
+          <div class="legend" role="list">
+            <span><i class="legend__dot legend__dot--busy"></i> Band kun</span>
+            <span><i class="legend__dot legend__dot--available"></i> Mavjud</span>
+            <span><i class="legend__dot legend__dot--partial"></i> Qisman band</span>
+          </div>
+        </div>
+        <div class="calendar__grid" aria-label="2025-yil aprel oyi bandlik taqvimi">
+          <!-- Calendar generated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packages">
+      <div class="container packages">
+        <h2>Paketlar va tariflar</h2>
+        <p class="section__lead">Hafta kuni, smena va faslga qarab differensial narxlash. Qo‘shimcha xizmatlarni tanlab, narxni darhol ko‘ring.</p>
+        <div class="pricing">
+          <article class="pricing-card">
+            <h3>Klassik paket</h3>
+            <p class="pricing-card__price">15 000 000 <span>UZS / smena</span></p>
+            <ul>
+              <li>Sig‘im: 300 mehmon</li>
+              <li>Standart dekor va ovoz tizimi</li>
+              <li>Foto/video xizmatlariga 10% chegirma</li>
+              <li>Halol oshxona menyusi</li>
+            </ul>
+            <button class="btn btn--full">Band qilish</button>
+          </article>
+          <article class="pricing-card pricing-card--accent">
+            <h3>Premium paket</h3>
+            <p class="pricing-card__price">28 000 000 <span>UZS / smena</span></p>
+            <ul>
+              <li>Sig‘im: 600 mehmon</li>
+              <li>Premium dekor, live musiqa</li>
+              <li>VIP mehmonlar xonasi va valet parking</li>
+              <li>360° virtual tur va dron videografiya</li>
+            </ul>
+            <button class="btn btn--full">Band qilish</button>
+          </article>
+          <article class="pricing-card">
+            <h3>Signature paket</h3>
+            <p class="pricing-card__price">45 000 000 <span>UZS / kechki smena</span></p>
+            <ul>
+              <li>Sig‘im: 1000+ mehmon</li>
+              <li>Dinamik menyu va eksklyuziv dekor</li>
+              <li>Premium foto/video, pyrotehnika</li>
+              <li>Shaxsiy event-menejer va koordinatsiya</li>
+            </ul>
+            <button class="btn btn--full">Band qilish</button>
+          </article>
+        </div>
+        <div class="addons" aria-labelledby="addons-title">
+          <h3 id="addons-title">Qo‘shimcha xizmatlar</h3>
+          <div class="addons__list">
+            <label>
+              <input type="checkbox" checked>
+              <span>Foto/Video studiya – 3 500 000 UZS</span>
+            </label>
+            <label>
+              <input type="checkbox">
+              <span>Ovoz rejissyori – 1 800 000 UZS</span>
+            </label>
+            <label>
+              <input type="checkbox">
+              <span>Gul dekoratori – 2 200 000 UZS</span>
+            </label>
+            <label>
+              <input type="checkbox">
+              <span>Telegram orqali jonli translatsiya – 900 000 UZS</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="roles">
+      <div class="container roles">
+        <h2>Ko‘p rolga mos boshqaruv paneli</h2>
+        <div class="roles__grid">
+          <article class="roles__card">
+            <h3>Mehmonlar uchun</h3>
+            <ul>
+              <li>Shaxsiy kabinet: buyurtmalar tarixi, qaytarish va kuzatuv ro‘yxati</li>
+              <li>Promo-kodlar, kuponlar va narx pasayishi bo‘yicha bildirishnomalar</li>
+              <li>Shartnoma va invoice PDF yuklab olish, ko‘p valyutali ko‘rinish (UZS / USD / EUR)</li>
+            </ul>
+          </article>
+          <article class="roles__card">
+            <h3>To‘yxona menejerlari uchun</h3>
+            <ul>
+              <li>Kalendarni bloklash, minimal va maksimal bron davrlari</li>
+              <li>KYC verifikatsiya: STIR/INN va bank rekvizitlari</li>
+              <li>Hisobot: daromad, bandlik foizi, talab yuqori davrlar</li>
+            </ul>
+          </article>
+          <article class="roles__card">
+            <h3>Administratorlar uchun</h3>
+            <ul>
+              <li>Foydalanuvchi va vendor moderatsiyasi, kontent nazorati</li>
+              <li>Shikoyatlar, nizolar va SLA monitoringi</li>
+              <li>Audit log, rollarga bo‘linish (superadmin, support, content manager)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="container workflow">
+        <h2>Bronlash jarayoni</h2>
+        <ol class="steps" aria-label="Bronlash bosqichlari">
+          <li>
+            <h3>1-qadam: Sana va slot</h3>
+            <p>Taqvimdan bo‘sh kunni tanlang. Platforma real vaqt rejimida bandlikni tekshiradi va slotni 15 daqiqaga zaxiraga oladi.</p>
+          </li>
+          <li>
+            <h3>2-qadam: Paket va ma’lumot</h3>
+            <p>Paket, smena va qo‘shimcha xizmatlarni tanlang. Kontakt ma’lumotlarini kiriting va shartnoma bilan tanishing.</p>
+          </li>
+          <li>
+            <h3>3-qadam: To‘lov</h3>
+            <p>Click, Payme, Uzum yoki Apelsin orqali to‘lov qiling. Stripe/PayPal integratsiyasi ham mavjud. To‘lovdan so‘ng email/SMS/Telegram tasdiqlari yuboriladi.</p>
+          </li>
+        </ol>
+        <div class="workflow__extras">
+          <div>
+            <h3>Bekor qilish siyosati</h3>
+            <p>Bronni tasdiqlashdan oldin foydalanuvchi foizli penya va cut-off muddatlari haqida xabardor qilinadi. Qayta bronlash va refund so‘rovlari shaxsiy kabinetda boshqariladi.</p>
+          </div>
+          <div>
+            <h3>Hujjatlar</h3>
+            <p>Shartnoma va invoice PDF formatda avtomatik generatsiya qilinadi (o‘zbek, rus, ingliz). Buxgalteriya uchun CSV/XLSX eksport mavjud.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="payments">
+      <div class="container payments">
+        <h2>To‘lovlar va xavfsizlik</h2>
+        <div class="payments__grid">
+          <article>
+            <h3>Escrow modeli</h3>
+            <p>Bron tasdiqlangunga qadar to‘lovlar escrow hisobida saqlanadi. Vendorga ko‘rsatilgan xizmatdan so‘ng avtomatik o‘tkazma amalga oshiriladi.</p>
+            <ul>
+              <li>PCI-DSS standartiga mos provayderlar</li>
+              <li>JWT/OAuth2 asosida autentifikatsiya</li>
+              <li>Parollar bcrypt orqali hashlangan</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Monitoring va zaxira</h3>
+            <p>Prometheus + Grafana monitoringi, ELK loglari, Telegram/Email alertlar. Ma’lumotlar bazasi uchun kunlik to‘liq va soatlik inkremental zaxira.</p>
+            <ul>
+              <li>99.5% SLA</li>
+              <li>Mobile-first, WCAG 2.1 AA dizayn</li>
+              <li>CDN orqali statik kontent tezligi</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="integrations">
+      <div class="container integrations">
+        <h2>Integratsiyalar va API</h2>
+        <div class="integrations__grid">
+          <article>
+            <h3>API va Webhooklar</h3>
+            <p>RESTful API bilan bir qatorda GraphQL qo‘llab-quvvatlanadi. Mobil ilovalar, hamkorlar va white-label yechimlar uchun Webhook va iCal eksport mavjud.</p>
+            <code>
+POST /api/bookings
+POST /api/payments/{bookingId}/init
+GET  /api/venues/{id}/calendar
+            </code>
+          </article>
+          <article>
+            <h3>Xabarnomalar</h3>
+            <p>Eskiz.uz SMS gateway, email (SendGrid/Mailgun) va Telegram bot orqali real vaqt bildirishnomalari. Google Calendar/iCal subscribe funksiyasi qo‘llab-quvvatlanadi.</p>
+            <ul>
+              <li>Promo-kodlar va aksiyalar</li>
+              <li>Wishlist va kuzatuvlar</li>
+              <li>Audit log va kontent siyosati</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Texnologiyalar steki</h3>
+            <p>Frontend: Next.js + TailwindCSS + Zustand. Backend: NestJS, PostgreSQL, Redis, S3. CI/CD: Docker, GitHub Actions, Kubernetes.</p>
+            <p>API xavfsizligi uchun WAF va rate limit, Redis sessiyalar. CDN sifatida Cloudflare ishlatiladi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="architecture">
+      <div class="container architecture">
+        <h2>Ma’lumotlar modeli</h2>
+        <div class="architecture__grid">
+          <article>
+            <h3>Asosiy jadvallar</h3>
+            <ul>
+              <li><code>users</code> – foydalanuvchilar roli, aloqa ma’lumotlari, til</li>
+              <li><code>vendors</code> – KYC ma’lumotlari va rekvizitlar</li>
+              <li><code>venues</code> – lokatsiya, sig‘im, narx va reyting</li>
+              <li><code>bookings</code> – sana, smena, paket, to‘lov statusi</li>
+              <li><code>payments</code>, <code>reviews</code>, <code>audit_logs</code></li>
+            </ul>
+          </article>
+          <article>
+            <h3>Unikal cheklovlar</h3>
+            <p>PostgreSQL EXCLUDE constraint bandlikda takrorlanishning oldini oladi. Redis asosidagi distributed lock tranzaksiyalar davomida xavfsiz muhit yaratadi.</p>
+            <p>GDPR mosligi va maxfiylik siyosatlari foydalanuvchi so‘rovlariga binoan ma’lumotlarni o‘chirish imkonini beradi.</p>
+          </article>
+          <article>
+            <h3>Yuk ko‘tarish va ishlash</h3>
+            <p>Server 100 ta parallel bron so‘rovini boshqaradi, qidiruv javobi 800 ms dan kam. 95-percentil sahifa yuklanishi 2.5 s dan kam.</p>
+            <p>Horizontal scaling va Kubernetes orqali auto-scaling qo‘llab-quvvatlanadi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demo">
+      <div class="container demo">
+        <h2>Interaktiv demo</h2>
+        <div class="demo__content">
+          <div class="demo__card">
+            <h3>Mobil ko‘rinish</h3>
+            <p>Mobile-first dizayn, PWA qo‘llab-quvvatlanadi. QR kod orqali mobil ilovaga o‘tish mumkin.</p>
+            <button class="btn btn--ghost">PWA ni sinab ko‘ring</button>
+          </div>
+          <div class="demo__card">
+            <h3>Vendor paneli</h3>
+            <p>Kalendarni boshqarish, paket sozlash va daromadlarni ko‘rish uchun zamonaviy dashboard. Dark mode mavjud.</p>
+            <button class="btn">Dashboard demo</button>
+          </div>
+          <div class="demo__card">
+            <h3>Admin panel</h3>
+            <p>Moderatsiya, audit log va nizolarni boshqarish uchun kuchli vositalar. SLA kuzatuv paneli bilan birga keladi.</p>
+            <button class="btn btn--ghost">Admin demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="policies">
+      <div class="container policies">
+        <h2>Moderatsiya va siyosatlar</h2>
+        <div class="policies__grid">
+          <article>
+            <h3>Kontent sifati</h3>
+            <p>Yuklangan rasmlar avtomatik tekshiruvdan o‘tadi. Soxta sharhlar va spamni AI moderatsiya tizimi aniqlaydi.</p>
+          </article>
+          <article>
+            <h3>Shaxsiy ma’lumot</h3>
+            <p>GDPR mos yondashuv: ma’lumotlarni minimallashtirish, foydalanuvchi so‘rovi bilan o‘chirish. Cookie siyosati, oferta va public agreement sahifalari mavjud.</p>
+          </article>
+          <article>
+            <h3>Bekor qilish</h3>
+            <p>Vendor va foydalanuvchilar siyosatni bronni tasdiqlashdan oldin chek-boks orqali qabul qiladi. Qaytarish so‘rovlariga SLA belgilangan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <h2>Demo so‘rash</h2>
+        <form class="contact__form">
+          <label>
+            <span>Ism</span>
+            <input type="text" placeholder="Dilshod" required>
+          </label>
+          <label>
+            <span>Telefon</span>
+            <input type="tel" placeholder="+998 90 123 45 67" required>
+          </label>
+          <label>
+            <span>Kompaniya turi</span>
+            <select required>
+              <option value="">Tanlang</option>
+              <option value="vendor">To‘yxona egasi</option>
+              <option value="agency">Event agentligi</option>
+              <option value="guest">Mehmon</option>
+            </select>
+          </label>
+          <label class="contact__textarea">
+            <span>Xabar</span>
+            <textarea rows="4" placeholder="Talab va savollaringizni yozing..."></textarea>
+          </label>
+          <label class="contact__checkbox">
+            <input type="checkbox" required>
+            <span>Oferta va maxfiylik siyosati bilan tanishdim</span>
+          </label>
+          <button type="submit" class="btn btn--full">Ariza yuborish</button>
+        </form>
+        <div class="contact__info">
+          <h3>Bog‘lanish</h3>
+          <p>Email: <a href="mailto:support@toyxona.uz">support@toyxona.uz</a></p>
+          <p>Telefon: <a href="tel:+998712005050">+998 71 200 50 50</a></p>
+          <p>Manzil: Toshkent sh., Amir Temur ko‘chasi 108B</p>
+          <div class="contact__map" role="img" aria-label="Xaritada ofis manzili">
+            <span>Google Maps integratsiyasi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">ToyXona.uz</div>
+        <p>To‘yxonalarni onlayn bron qilish, to‘lov va boshqaruv platformasi.</p>
+        <p class="footer__copyright">© 2025 ToyXona.uz. Barcha huquqlar himoyalangan.</p>
+      </div>
+      <div>
+        <h3>Hujjatlar</h3>
+        <ul>
+          <li><a href="#">Oferta</a></li>
+          <li><a href="#">Maxfiylik siyosati</a></li>
+          <li><a href="#">Cookie siyosati</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rollar</h3>
+        <ul>
+          <li><a href="#roles">Mehmon</a></li>
+          <li><a href="#roles">Vendor</a></li>
+          <li><a href="#roles">Administrator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Integratsiyalar</h3>
+        <ul>
+          <li>Click • Payme • Uzum • Apelsin</li>
+          <li>Stripe • PayPal</li>
+          <li>SendGrid • Eskiz.uz • Telegram Bot</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
