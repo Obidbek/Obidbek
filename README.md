@@ -1,10 +1,13 @@
+# Obidbek
+
 - 👋 Hi, I’m @Obidbek
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
-<!---
-Obidbek/Obidbek is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## Project Docs
+- [To'yimBor — To'liq dizayn va texnik brief](docs/toyimbor-design-brief.md)
+
+## Demo
+- [To'yimBor demo sahifasi](demo/index.html)
