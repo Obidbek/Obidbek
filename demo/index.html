@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To'yimBor — Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">To'yimBor</a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#hero">Bosh sahifa</a>
+          <a href="#catalog">To' yxonalar</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Aloqa</a>
+        </nav>
+        <div class="auth-actions">
+          <button class="btn ghost">Kirish</button>
+          <button class="btn primary">Ro'yxatdan o'tish</button>
+        </div>
+        <button class="mobile-menu" aria-label="Menyuni ochish">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Zamonaviy to'yxonalar katalogi</p>
+            <h1>To'y marosimingiz uchun ideal joyni toping</h1>
+            <p>
+              To'yimBor sizga shahar bo'ylab eng mashhur to'yxonalarni qidirish,
+              bo'sh sanalarni tekshirish va atigi bir necha qadamda band qilish
+              imkonini beradi.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#catalog">Katalogni ko'rish</a>
+              <a class="btn secondary" href="#flow">Band qilish jarayoni</a>
+            </div>
+          </div>
+          <div class="hero-search">
+            <form class="search-card" aria-label="To'yxona qidiruv formasi">
+              <h2>Orzuingizdagi to'yxonani toping</h2>
+              <label class="field">
+                <span>Joy nomi yoki to'yxona</span>
+                <input
+                  type="text"
+                  name="query"
+                  placeholder="🔍 Joy nomi, to'yxona yoki xizmat qidiring"
+                />
+              </label>
+              <label class="field">
+                <span>Sana</span>
+                <input type="date" name="date" />
+              </label>
+              <div class="field grid">
+                <button type="button" class="btn secondary">
+                  <span class="icon">⚙️</span>
+                  Filtrlar
+                </button>
+                <button type="submit" class="btn primary">Qidirish</button>
+              </div>
+              <p class="hint">
+                Sana kiritilmasa barcha mavjud to'yxonalar ko'rsatiladi.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog" class="section bg-light">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Mashhur to'yxonalar</h2>
+            <p>Shahar bo'ylab foydalanuvchilarimiz tavsiya qilgan joylar.</p>
+          </div>
+          <div class="cards-grid">
+            <article class="venue-card">
+              <div class="media" role="img" aria-label="Afsonaviy to'yxona">
+                <div class="badge">Video</div>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Afsonaviy To'yxona</h3>
+                  <button class="icon-btn" aria-label="Sevimlilarga qo'shish">☆</button>
+                </div>
+                <p class="meta">500 kishigacha · Qarshi, Mustaqillik ko'chasi</p>
+                <ul class="amenities">
+                  <li>🚗 Parking</li>
+                  <li>🎉 Dekor</li>
+                  <li>❄️ Konditsioner</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="price">
+                    <span>6 500 000 so'mdan</span>
+                    <span class="rating">⭐ 4.8</span>
+                  </div>
+                  <button class="btn primary">Band qilish</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="venue-card">
+              <div class="media" role="img" aria-label="Zarafshon palace"></div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Zarafshon Palace</h3>
+                  <button class="icon-btn" aria-label="Sevimlilarga qo'shish">☆</button>
+                </div>
+                <p class="meta">350 kishigacha · Samarqand, Registon ko'chasi</p>
+                <ul class="amenities">
+                  <li>📶 Wi-Fi</li>
+                  <li>🎤 Jonli musiqa</li>
+                  <li>🎥 LED ekran</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="price">
+                    <span>5 200 000 so'mdan</span>
+                    <span class="rating">⭐ 4.7</span>
+                  </div>
+                  <button class="btn primary">Band qilish</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="venue-card">
+              <div class="media" role="img" aria-label="Luxor wedding hall"></div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3>Luxor Wedding Hall</h3>
+                  <button class="icon-btn" aria-label="Sevimlilarga qo'shish">☆</button>
+                </div>
+                <p class="meta">420 kishigacha · Toshkent, Yakkasaroy tumani</p>
+                <ul class="amenities">
+                  <li>🍽️ Catering</li>
+                  <li>🎇 Pirotexnika</li>
+                  <li>🅿️ VIP parking</li>
+                </ul>
+                <div class="card-footer">
+                  <div class="price">
+                    <span>7 800 000 so'mdan</span>
+                    <span class="rating">⭐ 4.9</span>
+                  </div>
+                  <button class="btn primary">Band qilish</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow" class="section">
+        <div class="container flow">
+          <div class="section-heading">
+            <h2>Band qilish jarayoni</h2>
+            <p>Foydalanuvchilar uchun oddiy va ishonchli to'lov jarayoni.</p>
+          </div>
+          <ol class="steps" aria-label="Band qilish bosqichlari">
+            <li>
+              <span class="step-number">1</span>
+              Qidiruv paneli orqali manzil va sanani tanlang.
+            </li>
+            <li>
+              <span class="step-number">2</span>
+              To'yxona kartasidan batafsil ma'lumot va mavjudlikni ko'ring.
+            </li>
+            <li>
+              <span class="step-number">3</span>
+              Sana va slotni belgilang, hold taymeri bilan tasdiqlang.
+            </li>
+            <li>
+              <span class="step-number">4</span>
+              Onlayn to'lovni amalga oshiring va tasdiqlash xabarini oling.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="calendar" class="section bg-light">
+        <div class="container calendar-demo">
+          <div class="section-heading">
+            <h2>Band qilish taqvimi</h2>
+            <p>Slot darajasida mavjudlikni aniq ko'ring.</p>
+          </div>
+          <div class="calendar-widget" role="application" aria-label="Avgust 2025 taqvimi">
+            <div class="calendar-header">
+              <button aria-label="Oldingi oy">‹</button>
+              <div>
+                <span class="month">Avgust 2025</span>
+                <span class="legend">
+                  <span class="dot available"></span> Bo'sh
+                  <span class="dot partial"></span> Qisman
+                  <span class="dot booked"></span> Band
+                </span>
+              </div>
+              <button aria-label="Keyingi oy">›</button>
+            </div>
+            <div class="calendar-grid">
+              <div class="day">Du</div>
+              <div class="day">Se</div>
+              <div class="day">Ch</div>
+              <div class="day">Pa</div>
+              <div class="day">Ju</div>
+              <div class="day">Sh</div>
+              <div class="day">Ya</div>
+              <div class="cell muted">28</div>
+              <div class="cell muted">29</div>
+              <div class="cell muted">30</div>
+              <div class="cell muted">31</div>
+              <button class="cell available" type="button">
+                <span class="date">1</span>
+                <span class="slots">
+                  <span class="slot morning">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+              <button class="cell partial" type="button">
+                <span class="date">2</span>
+                <span class="slots">
+                  <span class="slot morning disabled">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+              <button class="cell booked" type="button" disabled>
+                <span class="date">3</span>
+                <span class="slots">
+                  <span class="slot morning disabled">Band</span>
+                  <span class="slot evening disabled">Band</span>
+                </span>
+              </button>
+              <button class="cell available" type="button">
+                <span class="date">4</span>
+                <span class="slots">
+                  <span class="slot morning">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+              <button class="cell available" type="button">
+                <span class="date">5</span>
+                <span class="slots">
+                  <span class="slot morning">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+              <button class="cell partial" type="button">
+                <span class="date">6</span>
+                <span class="slots">
+                  <span class="slot morning">Ertalab</span>
+                  <span class="slot evening disabled">Kechki</span>
+                </span>
+              </button>
+              <button class="cell booked" type="button" disabled>
+                <span class="date">7</span>
+                <span class="slots">
+                  <span class="slot morning disabled">Band</span>
+                  <span class="slot evening disabled">Band</span>
+                </span>
+              </button>
+              <button class="cell available" type="button">
+                <span class="date">8</span>
+                <span class="slots">
+                  <span class="slot morning">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+              <button class="cell available" type="button">
+                <span class="date">9</span>
+                <span class="slots">
+                  <span class="slot morning">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+              <button class="cell partial" type="button">
+                <span class="date">10</span>
+                <span class="slots">
+                  <span class="slot morning disabled">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+              <button class="cell booked" type="button" disabled>
+                <span class="date">11</span>
+                <span class="slots">
+                  <span class="slot morning disabled">Band</span>
+                  <span class="slot evening disabled">Band</span>
+                </span>
+              </button>
+              <button class="cell available" type="button">
+                <span class="date">12</span>
+                <span class="slots">
+                  <span class="slot morning">Ertalab</span>
+                  <span class="slot evening">Kechki</span>
+                </span>
+              </button>
+            </div>
+            <div class="slot-panel">
+              <h3>Tanlangan sana: <span>2-avgust, 2025</span></h3>
+              <div class="slot-options">
+                <button class="slot-chip disabled">Ertalab 10:00–15:00</button>
+                <button class="slot-chip">Kechki 17:00–22:00</button>
+              </div>
+              <div class="hold-timer">Rezervni yakunlash uchun: 09:45</div>
+              <button class="btn primary">Band qilish</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section">
+        <div class="container blog">
+          <div class="section-heading">
+            <h2>Blog yangiliklari</h2>
+            <p>To'y tashkil etishga oid foydali maslahatlar va trendlar.</p>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <h3>To'y dekoridagi 5 ta zamonaviy g'oya</h3>
+              <p>
+                Milliy naqsh va zamonaviy minimalizm uyg'unligida orzudagi dekorni
+                yaratish bo'yicha tavsiyalar.
+              </p>
+              <a href="#" class="link">Batafsil o'qish →</a>
+            </article>
+            <article class="blog-card">
+              <h3>To'yxonani band qilishda nimalarga e'tibor berish kerak?</h3>
+              <p>
+                Narx, xizmatlar, logistika va texnik ta'minot bo'yicha tekshiruv
+                ro'yxatini yuklab oling.
+              </p>
+              <a href="#" class="link">Batafsil o'qish →</a>
+            </article>
+            <article class="blog-card">
+              <h3>Qishki to'ylar uchun ilhom manbalari</h3>
+              <p>
+                Yorug'lik, ranglar va menyu bo'yicha ijodiy yechimlar bilan
+                mehmonlaringizni hayratda qoldiring.
+              </p>
+              <a href="#" class="link">Batafsil o'qish →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta">
+        <div class="container">
+          <h2>Loyihani ishga tushirishga tayyormisiz?</h2>
+          <p>
+            To'yimBor demo versiyasi Figma dizayn va backend integratsiyasi bilan
+            birga to'liq ishlovchi mahsulotga aylanadi.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:hello@toyimbor.uz">Bog'lanish</a>
+            <a class="btn secondary" href="docs/toyimbor-design-brief.md">Texnik brief</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 To'yimBor. Barcha huquqlar himoyalangan.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Telegram">Telegram</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuButton = document.querySelector('.mobile-menu');
+      const nav = document.querySelector('.main-nav');
+      menuButton?.addEventListener('click', () => {
+        menuButton.classList.toggle('open');
+        nav.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>
