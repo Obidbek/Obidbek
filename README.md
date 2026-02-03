@@ -8,6 +8,7 @@
 
 ## Project Docs
 - [To'yimBor — To'liq dizayn va texnik brief](docs/toyimbor-design-brief.md)
+- [Ixtirochi o'yinlari — Modullar va o'yinlar spetsifikatsiyasi](docs/inventor-games-design.md)
 
 ## Demo
 - [To'yimBor demo sahifasi](demo/index.html)
