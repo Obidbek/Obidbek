@@ -9,5 +9,7 @@
 ## Project Docs
 - [To'yimBor — To'liq dizayn va texnik brief](docs/toyimbor-design-brief.md)
 
+- [Smart Irrigation Monitoring Platform texnik sharti](docs/smart-irrigation-technical-spec.md)
+
 ## Demo
 - [To'yimBor demo sahifasi](demo/index.html)
